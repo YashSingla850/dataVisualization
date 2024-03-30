@@ -6,10 +6,10 @@ const Gamma = () => {
   const data = [];
 
   for (let [key, values] of map.entries()) {
-    const gammaArr = getGamma(key);
-    const mean = calculateMean(gammaArr);
-    const median = calculateMedian(gammaArr);
-    const mode = calculateMode(gammaArr);
+    const gammaArr = getGamma(key); // getGamma function is used to get all the calculated gamma value in arr
+    const mean = calculateMean(gammaArr); // to calculate mean val;
+    const median = calculateMedian(gammaArr);  // to calculate medianVal
+    const mode = calculateMode(gammaArr);  // to calculte mode val
     data.push({ key, mean, median, mode });
   }
   console.log(data);

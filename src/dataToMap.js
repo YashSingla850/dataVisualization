@@ -1,7 +1,9 @@
 import data from "./data/Wine-Data.json"
+
+
+//  this function help to seperate the alcohol class and put them into a map with [key(alcoholClass) : value ([object])];
 export const dataToMap = function () {
     const map = new Map();
-
     data.forEach(function (val) {
         if (!map.get(val.Alcohol)) {
             map.set(val.Alcohol, []);
@@ -11,7 +13,7 @@ export const dataToMap = function () {
 
     return map;
 }
-
+// to get All the Flavanoid value from arr object
 export const getFlavanoid = function (key) {
     const map = dataToMap();
     const arr = new Array();
@@ -23,6 +25,7 @@ export const getFlavanoid = function (key) {
     return arr;
 }
 
+// to calculate gamma value for all the data alcohol class wise and put it in a arr
 
 export const getGamma = function (key) {
 
