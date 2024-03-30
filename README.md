@@ -28,4 +28,4 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 <img src="img/alcohol.png" />
-<img src="img/gamma.png" width="128"/>
+<img src="img/gamma.png"/>
